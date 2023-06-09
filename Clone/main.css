@@ -105,3 +105,38 @@ body {
 .RagText > div { 
     font-family: Tajawal;
 }
+
+.TL{
+    display: flex;
+    padding: 5px;
+}
+.TL div{
+    margin: 0rem 0rem 0rem 1.5rem;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.TL div .UserSec{
+    padding: 5px;
+    flex:2;
+}
+.TL div .ConSec{
+    padding: 5px;
+    flex: 5;
+    border-left-style: ridge;
+}
+.TL div .UserSec .UserProfilePicture img{
+    height: 100px;
+    width:  100px;
+}
+.TL div .UserSec .UserDetails{
+    margin: 0rem 0rem 0rem .5rem;
+    display: block;
+    flex-direction: column;
+}
+.TL div .UserSec .UserDetails h3{
+    margin: 0;
+}
+.TL div .UserSec .UserDetails p{
+    margin: 0;
+}

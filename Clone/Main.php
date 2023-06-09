@@ -112,6 +112,33 @@ session_start()
                 </div>
             </div>
 
+            <!-- User Timline -->
+
+            <div class="TL">
+
+                <div>
+                    <!-- User Details -->
+                    <div class="UserSec"> 
+
+                        <div class="UserProfilePicture">
+                            <img src="./Assets/images/user.png" alt="">
+                        </div>
+
+                        <div class="UserDetails">
+                            <h3> UserName </h3>
+                            <p> Date </p>
+                        </div>
+                    
+                    </div>
+
+                    <!-- User Post Content -->
+                    <div class="Consec"> 
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae aliquet nec ullamcorper sit amet. Amet cursus sit amet dictum sit. Dignissim diam quis enim lobortis. Vel pretium lectus quam id leo in. Ut lectus arcu bibendum at. Tellus elementum sagittis vitae et leo duis ut diam quam. Consequat mauris nunc congue nisi vitae suscipit. Amet porttitor eget dolor morbi non arcu risus quis varius. Fermentum et sollicitudin ac orci phasellus egestas tellus rutrum. Parturient montes nascetur ridiculus mus. Neque convallis a cras semper auctor neque. Purus gravida quis blandit turpis cursus in. Nisl pretium fusce id velit ut tortor pretium viverra. Urna et pharetra pharetra massa massa ultricies mi. Tellus molestie nunc non blandit massa. Scelerisque varius morbi enim nunc faucibus. Rhoncus urna neque viverra justo nec ultrices dui sapien.
+                    </div>
+                </div>
+
+            </div>
+
 
         </div>
 
