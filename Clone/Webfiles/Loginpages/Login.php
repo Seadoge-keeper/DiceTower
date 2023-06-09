@@ -19,10 +19,10 @@
             <input type="submit">
         </form>
         <div>
-            don't have an account yet? <a href="Registration.html">Click Here</a>
+            don't have an account yet? <a href="Registration.php">Click Here</a>
         </div>
         <div>
-            Forgot password? <a href="ResetPass.html">Click Here</a>
+            Forgot password? <a href="./ResetPass.php">Click Here</a>
         </div>
     </div>
     </div>

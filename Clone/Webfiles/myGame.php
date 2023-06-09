@@ -15,36 +15,31 @@
 
             </div>
 
-            <!--  delete this comment once converted to php
-            if (!isset($_SESSION['loggedin'])) {
-            echo "
-            <div class="accts">
-                <a href="/Loginpages/Login.html">Account</a>
-            </div>
-            } else {
-            echo "
-            <div class="accts">
-                <a href="/Webfiles/AcctDetails.html">Account</a>
-            </div>
-
-            }
-        ?>-->
-
-            <div class="accts">
-                <a href="/Webfiles/AcctDetails.html">Account</a>
-            </div>
+            <?php
+                if (!isset($_SESSION['loggedin'])) {
+                    echo "
+                    <div class='accts'>
+                    <a href='Loginpages/Login.php'>Log in</a>
+                    </div>";
+                } else {
+                echo "
+                    <div class='accts'>
+                        <a href='AcctDetails.php'>Account</a>
+                    </div>";
+                }
+            ?>
         </div>
         <div class="buttons">
             <!-- buttons - contains the links to the other pages -->
             <ul class="menuList">
                 <li>
-                    <a href="../Main.html"> Home </a>
+                    <a href="../Main.php"> Home </a>
                 </li>
                 <li>
-                    <a href="myGame.html"> My Games</a>
+                    <a href="myGame.php"> My Games</a>
                 </li>
                 <li>
-                    <a href="findGame.html"> Find a game </a>
+                    <a href="findGame.php"> Find a game </a>
                 </li>
             </ul>
         </div>

@@ -39,6 +39,7 @@ body {
 .PageContainer {
     padding: 25px;
     border-radius: 5px;
+    height: 100%;
     height: fit-content;
     display: flex;
     flex-flow: column nowrap;

@@ -10,7 +10,6 @@
             <img src="../../Assets/images/Raggy/ResetPass.png" class="icon">
             <h1>Reset Password</h1>
         </div>
-        <br>
         <form action="" class="details">
             <input type="text" placeholder="Username">
             <input type="text" placeholder="Email">

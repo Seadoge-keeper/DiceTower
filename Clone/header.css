@@ -2,12 +2,12 @@
 
 @font-face { /* The main font for the website */
     font-family: "Prompt";
-    src: url("/Assets/Fonts/Prompt-Medium.ttf") format('truetype');
+    src: url("Assets/Fonts/Prompt-Medium.ttf") format('truetype');
 }
 
 @font-face { /* The font for the Raggy */
     font-family: "Tajawal";
-    src: url("/Assets/Fonts/Tajawal-Regular.ttf") format('truetype');
+    src: url("Assets/Fonts/Tajawal-Regular.ttf") format('truetype');
 }
 
 /* Banner settings */

@@ -1,4 +1,5 @@
 <?php
+session_start()
 
 ?>
 
@@ -12,7 +13,7 @@
         <!-- Header comprises two parts -->
         <div class="logo">
             <!-- logo - contains the title and logo img -->
-            <img class="icon" src="/Assets/images/DiceImg.png">
+            <img class="icon" src="Assets\images\DiceImg.png">
             <h1> Dice Tower </h1> <!-- Place holder text-->
 
             <div class="spacer">
@@ -20,33 +21,30 @@
             </div>
 
             <?php
-            if (!isset($_SESSION['loggedin'])) {
-            echo "
-            <div class='accts'>
-                <a href='/Loginpages/Login.php'>Log in</a>
-            </div>";
-            } else {
-            echo "
-            <div class='accts'>
-                <a href='/Webfiles/AcctDetails.html'>Account</a>
-            </div>";
-            }
-        ?>
-            <div class="accts">
-                <a href="/Webfiles/AcctDetails.html">Account</a>
-            </div>
+                if (!isset($_SESSION['loggedin'])) {
+                    echo "
+                    <div class='accts'>
+                    <a href='Webfiles/Loginpages/Login.php'>Log in</a>
+                    </div>";
+                } else {
+                echo "
+                    <div class='accts'>
+                        <a href='/Webfiles/AcctDetails.php'>Account</a>
+                    </div>";
+                }
+            ?>
         </div>
         <div class="buttons">
             <!-- buttons - contains the links to the other pages -->
             <ul class="menuList">
                 <li>
-                    <a href="Main.html"> Home </a>
+                    <a href="Main.php"> Home </a>
                 </li>
                 <li>
-                    <a href="/Webfiles/myGame.html"> My Games</a>
+                    <a href="Webfiles/myGame.php"> My Games</a>
                 </li>
                 <li>
-                    <a href="/Webfiles/findGame.html"> Find a game </a>
+                    <a href="Webfiles/findGame.php"> Find a game </a>
                 </li>
             </ul>
         </div>
@@ -61,7 +59,7 @@
 
             <div class="CGWrap">
                 <div class="CGhead">
-                    <img class="gameIcon" src="/Assets/images/DiceImg.png">
+                    <img class="gameIcon" src="Assets/images/DiceImg.png">
                     <a href="#" class="gTitle">
                         <h3>game title</h3>
                     </a>
@@ -104,7 +102,7 @@
                     </h3>
                     <div class="CCM">
                         <!-- CCM = Campaign Chat Message -->
-                        Let's try searching over <a href="/Webfiles/findGame.html">there</a>
+                        Let's try searching over <a href="Webfiles/findGame.php">there</a>
                     </div>
                 </div>
             </div>
