@@ -12,6 +12,9 @@
 
 /* Banner settings */
 .header {
+    background-color: #9DC7C8;
+    border-color: black;
+    border-bottom-style: solid;
     display: flex;
     flex-direction: column;
     margin-left: 5%;
@@ -58,6 +61,8 @@
 }
 
 .accts {
+    background-color: 748386;
+    border-radius: 15px;
     display: flex;
     align-items: center;
     justify-content: center;

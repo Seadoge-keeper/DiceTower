@@ -1,7 +1,6 @@
 
  /* Overall settings */
  * {
-    border: 1px solid black;
     font-family: Prompt;
 }
 
@@ -31,14 +30,16 @@ body {
 
 .gameIcon {
     width: 80px;
-    height: 80px; 
+    height: 100px; 
     object-fit: contain;
 }
 
 .gameChat {
+    box-shadow: 10px 5px 10px #3B0D11 inset;
     display: flex;
     flex-direction: column;
     flex-grow: 2;
+    padding: 15px;
 }
 
 .gTitle {
@@ -58,7 +59,8 @@ body {
 }
 
 .schedule {
-    padding: 2px;
+    background-color: #748386;
+    padding: 2px 15px 2px 15px;
 }
 
 .CCCC {

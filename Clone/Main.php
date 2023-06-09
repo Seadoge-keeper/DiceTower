@@ -86,7 +86,12 @@ session_start()
                     </h3>
                     <div class="CCM">
                         <!-- CCM = Campaign Chat Message -->
-                        Chat content
+                        <form action="">
+                        <label for="PostText">ChatBox:</label>
+                        <input type="text" id="PostText" name="PostText">
+                        <button> Image</button>
+                        </form>
+                        
                     </div>
                 </div>
             </div>
