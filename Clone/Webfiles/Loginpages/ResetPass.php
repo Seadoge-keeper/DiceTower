@@ -1,10 +1,10 @@
 <head>
-    <link rel="stylesheet" href="ResetPass.css">
+    <link rel="stylesheet" href="Login.css">
 </head>
 
 <body>
     <div class="Wrapper">
-    <button onclick="history.back()" class="back"> Back </button>
+    <button onclick="history.back()" class="back"> <img src="../../Assets/images/back.png" alt=""> </button>
     <div class="PageContainer">
         <div>
             <img src="../../Assets/images/Raggy/ResetPass.png" class="icon">
