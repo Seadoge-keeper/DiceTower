@@ -1,0 +1,59 @@
+ * {
+    border: 1px solid black;
+    font-family: Prompt;
+}
+body {
+    background-color: white;
+    font-family: "Prompt";
+    display: flex;
+    margin: 0%;
+    flex-direction: column;
+}
+/* Overall game list board */
+.Gameboard {
+    flex-flow: column nowrap;
+    margin-left: 5%;
+    width: 90%;
+}
+.ListedGame {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    margin: 10px;
+}
+.ListedGame > div {
+    width: 1;
+    display: flex;
+    flex-grow: 2;
+    flex-flow: column nowrap;
+    padding: 1%;
+}
+/* For the listed game items */
+.gameheader {
+    display: flex;
+    align-items: center;
+}
+.GameProfilePic {
+    height: 150px;
+    width: 150px;
+}
+.GameTitle {
+    margin: 0;
+}
+.description {
+    margin: 10px 0;
+    word-wrap: break-word;
+}
+.Hosts {
+    display: flex;
+    flex-flow: row nowrap;
+}
+.Hosts h3 {
+    padding: 10px;
+    margin: 0 2px;
+}
+/*User Information*/
+.Pfp {
+    width: 80px;
+    height: 80px;
+}

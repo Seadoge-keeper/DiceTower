@@ -1,0 +1,68 @@
+@font-face { /* The main font for the website */
+    font-family: "Prompt";
+    src: url("../../Assets/Fonts/Prompt-Medium.ttf") format('truetype');
+}
+
+@font-face { /* The font for Raggy */
+    font-family: "Tajawal";
+    src: url("/Assets/Fonts/Tajawal-Regular.ttf") format('truetype');
+}
+
+* {
+    border: 1px solid black;
+    font-family: Prompt;
+}
+
+.Wrapper {
+    display: flex;
+    width: 60%;
+    max-width: 550px;
+    min-height: 390px;
+    flex-flow: column nowrap;
+    padding: 25px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.icon {
+    margin-right: 20px;
+    height: 100px;
+    width: 100px;
+    object-fit: contain;
+}
+
+.PageContainer {
+    padding: 25px;
+    border-radius: 5px;
+    height: fit-content;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.PageContainer > div {
+    display: flex;
+}
+.details {
+    display: flex;
+    height: 80%;
+    width: 50vh;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+}
+.details input {
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.back {
+    width: fit-content;
+    padding: 10px;
+    border-radius: 5px;
+    transform: translateY(75px) translateX(10px);
+}

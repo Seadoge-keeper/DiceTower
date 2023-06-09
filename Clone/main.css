@@ -1,55 +1,22 @@
-* {
+
+ /* Overall settings */
+ * {
     border: 1px solid black;
+    font-family: Prompt;
 }
 
 body {
     background-color: white;
-}
-
-.header {
+    font-family: "Prompt";
     display: flex;
+    margin: 0%;
     flex-direction: column;
-    margin-left: 5%;
-    width: 90%;
 }
-
-.logo {
-    display: flex;
-    flex-direction: row;
-}
-
-.logo h1 {
-    align-self: center;
-    padding: 10px;
-    width: 200px;
-}
-
-.menuList {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-}
-
-.menuList li {
-
-    border-radius: 5px;
-    padding: 5px;
-    margin-right: 15px;
-    font-size: 25px;
-    width: fit-content;
-    height: 30px;
-}
-
-.icon {
-    margin-right: 20px;
-    height: 100px;
-    width: 100px;
-    object-fit: contain;
-}
-
+/* Main Body settings */
 .timeline {
     display: flex;
     margin-left: 5%;
+    margin-right: 5%;
 }
 
 .CGWrap {
@@ -68,6 +35,12 @@ body {
     object-fit: contain;
 }
 
+.gameChat {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+}
+
 .gTitle {
     margin-left: 5px;
     padding: 1%;
@@ -78,21 +51,55 @@ body {
     justify-content: center;
 }
 
+.CCM {
+    width: 100%;
+    height: 100%;
+    text-indent: 10px;
+}
+
 .schedule {
     padding: 2px;
 }
 
-.spacer {
-    flex-grow: 2;
-}
-
-.accts {
+.CCCC {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    width: 80%;
 }
 
-.accts a {
-    padding: 4px;
-    font-size: 24px;
+.CCCC h3 {
+    text-indent: 5px;
+    margin: 10px 0;
+}
+
+.CCC {
+    padding: 10px;
+    display: flex;
+}
+
+.SUPFP {
+    width: 80px;
+    height: 80px; 
+    object-fit: contain;
+}
+
+.ERag {
+    width: 150px;
+    height: 150px; 
+    object-fit: contain;
+}
+
+.RagText { 
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    font-family: Tajawal;
+}
+
+.RagText > h3 { 
+    font-family: Tajawal;
+}
+
+.RagText > div { 
+    font-family: Tajawal;
 }

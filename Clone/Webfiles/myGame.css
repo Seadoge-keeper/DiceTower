@@ -1,0 +1,49 @@
+ * {
+    border: 1px solid black;
+    font-family: Prompt;
+}
+body {
+    background-color: white;
+    font-family: "Prompt";
+    display: flex;
+    margin: 0%;
+    flex-direction: column;
+}
+/* Main game page */
+.Serverlist {
+    display: flex;
+    flex-flow: column nowrap;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.Tools {
+    display: flex;
+    align-items: center;
+}
+.Tools > input {
+    margin: 5;
+}
+.Tools > form {
+    display: flex;
+    align-items: center;
+    margin: 5;
+}
+
+/* Message content */
+
+.MsgCont {
+    display: flex;
+    padding-left: 1%;
+    padding-right: 1%;
+    flex-direction: column;
+}
+.MsgCont > h4{
+    margin: 15px 0 10px 0;
+    font-weight: normal;
+    font-style: italic;
+}
+.MsgCont > div{
+    height: 100%;
+    align-self: stretch;
+}
