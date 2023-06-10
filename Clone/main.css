@@ -132,6 +132,7 @@ body {
 }
 .TL div .UserSec .UserDetails{
     margin: 0rem 0rem 0rem .5rem;
+    color: white;
     display: block;
     flex-direction: column;
 }
@@ -139,10 +140,11 @@ body {
     margin: 0;
 }
 .TL div .UserSec .UserDetails p{
+    color: black;
     margin: 0;
 }
 .TL div .UserSec .UserDetails ul{
-    margin: 0;
+    margin: .5rem 0rem 0rem 0rem;
 }
 .TL div .UserSec .UserDetails li{
     display: flex;
@@ -156,6 +158,7 @@ body {
 .TL div .UserSec .UserDetails ul li button{
     width: 2.25rem;
     margin-right: 1rem;
+    background-color: transparent;
 }
 .TL div .UserSec .UserDetails icon{
 }
