@@ -126,10 +126,11 @@ session_start()
 
                         <div class="UserDetails">
                             <h3> UserName </h3>
-                            <p> Date </p>
+                            <p> 3 hours ago, 12:24pm </p>
+                            <p> July, 10, 2023</p>
                             <ul>
-                                <li>Like</li>
-                                <li>Comment</li>
+                                <li> <button> <img src="Assets/images/heart.png" alt="" class="icon"></button> 0 likes</li>
+                                <li> <button> <img src="Assets/images/comment.png" alt="" class="icon" ></button> 0 Comment </li>
                             </ul>
                         </div>
                     

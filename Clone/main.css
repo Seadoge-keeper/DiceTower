@@ -40,6 +40,7 @@ body {
     flex-direction: column;
     flex-grow: 2;
     padding: 15px;
+    background-color: #6A3937;
 }
 
 .gTitle {
@@ -106,7 +107,7 @@ body {
     font-family: Tajawal;
 }
 
-.TL{
+.TL,.CCC{
     display: flex;
     padding: 5px;
 }
@@ -139,4 +140,22 @@ body {
 }
 .TL div .UserSec .UserDetails p{
     margin: 0;
+}
+.TL div .UserSec .UserDetails ul{
+    margin: 0;
+}
+.TL div .UserSec .UserDetails li{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+.TL div .UserSec .UserDetails ul li img{
+    height: 20px;
+    width: 20px;
+}
+.TL div .UserSec .UserDetails ul li button{
+    width: 2.25rem;
+    margin-right: 1rem;
+}
+.TL div .UserSec .UserDetails icon{
 }
