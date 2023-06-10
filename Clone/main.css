@@ -117,6 +117,12 @@ body {
     flex-direction: row;
     width: 100%;
 }
+.TL .UserPost{
+    padding: 1.25rem;
+    border-radius: 25px;
+    background-color: #3B0D11;
+    box-shadow: 4px 4px 6px black;
+}
 .TL div .UserSec{
     padding: 5px;
     flex:2;
@@ -132,6 +138,7 @@ body {
 }
 .TL div .UserSec .UserDetails{
     margin: 0rem 0rem 0rem .5rem;
+    color: white;
     display: block;
     flex-direction: column;
 }
@@ -139,10 +146,11 @@ body {
     margin: 0;
 }
 .TL div .UserSec .UserDetails p{
+    color: black;
     margin: 0;
 }
 .TL div .UserSec .UserDetails ul{
-    margin: 0;
+    margin: .5rem 0rem 0rem 0rem;
 }
 .TL div .UserSec .UserDetails li{
     display: flex;
@@ -156,6 +164,7 @@ body {
 .TL div .UserSec .UserDetails ul li button{
     width: 2.25rem;
     margin-right: 1rem;
+    background-color: transparent;
 }
 .TL div .UserSec .UserDetails icon{
 }

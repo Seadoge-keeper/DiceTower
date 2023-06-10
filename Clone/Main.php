@@ -87,9 +87,10 @@ session_start()
                     <div class="CCM">
                         <!-- CCM = Campaign Chat Message -->
                         <form action="">
-                        <label for="PostText">ChatBox:</label>
+                        <label for="PostText">Got something to say? </label>
                         <input type="text" id="PostText" name="PostText">
-                        <button> Image</button>
+                        <button> add Image</button>
+                        <button> Submit</button>
                         </form>
                         
                     </div>
@@ -116,7 +117,7 @@ session_start()
 
             <div class="TL">
 
-                <div>
+                <div class="UserPost">
                     <!-- User Details -->
                     <div class="UserSec"> 
 
@@ -126,11 +127,11 @@ session_start()
 
                         <div class="UserDetails">
                             <h3> UserName </h3>
-                            <p> 3 hours ago, 12:24pm </p>
+                            <p> 12:24pm </p>
                             <p> July, 10, 2023</p>
                             <ul>
-                                <li> <button> <img src="Assets/images/heart.png" alt="" class="icon"></button> 0 likes</li>
-                                <li> <button> <img src="Assets/images/comment.png" alt="" class="icon" ></button> 0 Comment </li>
+                                <li> <button> <img src="Assets/images/heart.png" alt="" class="icon"></button> 0 </li>
+                                <li> <button> <img src="Assets/images/comment.png" alt="" class="icon" ></button> 0</li>
                             </ul>
                         </div>
                     
@@ -138,15 +139,18 @@ session_start()
 
                     <!-- User Post Content -->
                     <div class="Consec"> 
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Vitae aliquet nec ullamcorper sit amet. Amet cursus sit amet dictum sit.
-                    Dignissim diam quis enim lobortis. Vel pretium lectus quam id leo in.
-                    Ut lectus arcu bibendum at. Tellus elementum sagittis vitae et leo duis ut diam quam. Consequat mauris nunc congue nisi vitae suscipit.
-                    Amet porttitor eget dolor morbi non arcu risus quis varius. Fermentum et sollicitudin ac orci phasellus egestas tellus rutrum.
-                    Parturient montes nascetur ridiculus mus. Neque convallis a cras semper auctor neque. Purus gravida quis blandit turpis cursus in.
-                    Nisl pretium fusce id velit ut tortor pretium viverra. Urna et pharetra pharetra massa massa ultricies mi. Tellus molestie nunc non blandit massa.
-                    Scelerisque varius morbi enim nunc faucibus. Rhoncus urna neque viverra justo nec ultrices dui sapien.
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Vitae aliquet nec ullamcorper sit amet. Amet cursus sit amet dictum sit.
+                            Dignissim diam quis enim lobortis. Vel pretium lectus quam id leo in.
+                            Ut lectus arcu bibendum at. Tellus elementum sagittis vitae et leo duis ut diam quam. Consequat mauris nunc congue nisi vitae suscipit.
+                            Amet porttitor eget dolor morbi non arcu risus quis varius. Fermentum et sollicitudin ac orci phasellus egestas tellus rutrum.
+                            Parturient montes nascetur ridiculus mus. Neque convallis a cras semper auctor neque. Purus gravida quis blandit turpis cursus in.
+                            Nisl pretium fusce id velit ut tortor pretium viverra. Urna et pharetra pharetra massa massa ultricies mi. Tellus molestie nunc non blandit massa.
+                            Scelerisque varius morbi enim nunc faucibus. Rhoncus urna neque viverra justo nec ultrices dui sapien.
+                        </p>
+                    
                     </div>
                 </div>
 
