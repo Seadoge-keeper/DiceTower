@@ -1,4 +1,83 @@
 * {
     border: 1px solid black;
-    font-size: Prompt;
+    font-family: Prompt;
+}
+
+@font-face { /* The main font for the website */
+    font-family: "Prompt";
+    src: url("../Assets/Fonts/Prompt-Medium.ttf") format('truetype');
+}
+
+@font-face { /* The font for the Raggy */
+    font-family: "Tajawal";
+    src: url("../Assets/Fonts/Tajawal-Regular.ttf") format('truetype');
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.Wrapper {
+    display: flex;
+    width: 60%;
+    max-width: 550px;
+    min-height: 450px;
+    flex-flow: column nowrap;
+    padding: 25px;
+}
+
+.icon {
+    margin-right: 20px;
+    height: 100px;
+    width: 100px;
+    object-fit: contain;
+}
+
+.PageContainer {
+    padding: 25px;
+    border-radius: 5px;
+    height: fit-content;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.PageContainer > div {
+    display: flex;
+}
+
+.details {
+    display: flex;
+    height: 80%;
+    width: 50vh;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+}
+
+.details input {
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.Options {
+    visibility: hidden;
+    display: flex;
+    justify-content: space-around;
+}
+.Options > button {
+    padding: 15px;
+}
+
+.select {
+    display: flex;
+}
+
+.back {
+    width: fit-content;
+    padding: 10px;
+    border-radius: 5px;
+    transform: translateY(75px) translateX(10px);
 }

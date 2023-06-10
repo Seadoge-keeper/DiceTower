@@ -1,0 +1,105 @@
+
+ /* Overall settings */
+ * {
+    border: 1px solid black;
+    font-family: Prompt;
+}
+
+body {
+    background-color: white;
+    font-family: "Prompt";
+    display: flex;
+    margin: 0%;
+    flex-direction: column;
+}
+/* Main Body settings */
+.timeline {
+    display: flex;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.CGWrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.CGhead {
+    display: flex;
+    align-items: center;
+}
+
+.gameIcon {
+    width: 80px;
+    height: 80px; 
+    object-fit: contain;
+}
+
+.gameChat {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+}
+
+.gTitle {
+    margin-left: 5px;
+    padding: 1%;
+    display: flex;
+    flex-grow: 2;
+    height: 100%;
+    font-size: 24px;
+    justify-content: center;
+}
+
+.CCM {
+    width: 100%;
+    height: 100%;
+    text-indent: 10px;
+}
+
+.schedule {
+    padding: 2px;
+}
+
+.CCCC {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.CCCC h3 {
+    text-indent: 5px;
+    margin: 10px 0;
+}
+
+.CCC {
+    padding: 10px;
+    display: flex;
+}
+
+.SUPFP {
+    width: 80px;
+    height: 80px; 
+    object-fit: contain;
+}
+
+.ERag {
+    width: 150px;
+    height: 150px; 
+    object-fit: contain;
+}
+
+.RagText { 
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    font-family: Tajawal;
+}
+
+.RagText > h3 { 
+    font-family: Tajawal;
+}
+
+.RagText > div { 
+    font-family: Tajawal;
+}

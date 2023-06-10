@@ -4,7 +4,7 @@ session_start()
 ?>
 
 <head>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="Index.css">
     <link rel="stylesheet" href="header.css">
 </head>
 
@@ -38,7 +38,7 @@ session_start()
             <!-- buttons - contains the links to the other pages -->
             <ul class="menuList">
                 <li>
-                    <a href="Main.php"> Home </a>
+                    <a href="Index.php"> Home </a>
                 </li>
                 <li>
                     <a href="Webfiles/myGame.php"> My Games</a>
@@ -78,7 +78,7 @@ session_start()
             <!-- gameChat a section for displaying messages from campaigns you are a part of -->
             <div class="CCC">
                 <!-- CCC = Campaign Chat Container -->
-                <img src="Assets\images\Placeholder.jpg" class="SUPFP" /> <!-- SUPFP = Server User Profile Picture -->
+                <img src="Assets\images\Placeholder.jpg" class="SUPFP" /> <!-- SUPP = Server User Profile Picture -->
                 <div class="CCCC">
                     <!-- CCC = Campaign Chat Content Container -->
                     <h3>
@@ -86,12 +86,7 @@ session_start()
                     </h3>
                     <div class="CCM">
                         <!-- CCM = Campaign Chat Message -->
-                        <form action="">
-                        <label for="PostText">ChatBox:</label>
-                        <input type="text" id="PostText" name="PostText">
-                        <button> Image</button>
-                        </form>
-                        
+                        Chat content
                     </div>
                 </div>
             </div>
@@ -110,46 +105,6 @@ session_start()
                         Let's try searching over <a href="Webfiles/findGame.php">there</a>
                     </div>
                 </div>
-            </div>
-
-            <!-- User Timline -->
-
-            <div class="TL">
-
-                <div>
-                    <!-- User Details -->
-                    <div class="UserSec"> 
-
-                        <div class="UserProfilePicture">
-                            <img src="./Assets/images/user.png" alt="">
-                        </div>
-
-                        <div class="UserDetails">
-                            <h3> UserName </h3>
-                            <p> 3 hours ago, 12:24pm </p>
-                            <p> July, 10, 2023</p>
-                            <ul>
-                                <li> <button> <img src="Assets/images/heart.png" alt="" class="icon"></button> 0 likes</li>
-                                <li> <button> <img src="Assets/images/comment.png" alt="" class="icon" ></button> 0 Comment </li>
-                            </ul>
-                        </div>
-                    
-                    </div>
-
-                    <!-- User Post Content -->
-                    <div class="Consec"> 
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Vitae aliquet nec ullamcorper sit amet. Amet cursus sit amet dictum sit.
-                    Dignissim diam quis enim lobortis. Vel pretium lectus quam id leo in.
-                    Ut lectus arcu bibendum at. Tellus elementum sagittis vitae et leo duis ut diam quam. Consequat mauris nunc congue nisi vitae suscipit.
-                    Amet porttitor eget dolor morbi non arcu risus quis varius. Fermentum et sollicitudin ac orci phasellus egestas tellus rutrum.
-                    Parturient montes nascetur ridiculus mus. Neque convallis a cras semper auctor neque. Purus gravida quis blandit turpis cursus in.
-                    Nisl pretium fusce id velit ut tortor pretium viverra. Urna et pharetra pharetra massa massa ultricies mi. Tellus molestie nunc non blandit massa.
-                    Scelerisque varius morbi enim nunc faucibus. Rhoncus urna neque viverra justo nec ultrices dui sapien.
-                    </div>
-                </div>
-
             </div>
 
 

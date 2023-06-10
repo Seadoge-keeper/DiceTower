@@ -33,7 +33,7 @@
             <!-- buttons - contains the links to the other pages -->
             <ul class="menuList">
                 <li>
-                    <a href="../Main.php"> Home </a>
+                    <a href="../Index.php"> Home </a>
                 </li>
                 <li>
                     <a href="myGame.php"> My Games</a>
