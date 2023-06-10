@@ -127,6 +127,10 @@ session_start()
                         <div class="UserDetails">
                             <h3> UserName </h3>
                             <p> Date </p>
+                            <ul>
+                                <li>Like</li>
+                                <li>Comment</li>
+                            </ul>
                         </div>
                     
                     </div>
