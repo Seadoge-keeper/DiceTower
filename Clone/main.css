@@ -117,6 +117,12 @@ body {
     flex-direction: row;
     width: 100%;
 }
+.TL .UserPost{
+    padding: 1.25rem;
+    border-radius: 25px;
+    background-color: #3B0D11;
+    box-shadow: 4px 4px 6px black;
+}
 .TL div .UserSec{
     padding: 5px;
     flex:2;
