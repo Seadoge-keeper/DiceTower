@@ -9,24 +9,17 @@ session_start();
 
 <body>
     <div class="Wrapper">
-<<<<<<< Updated upstream
-    <button onclick="history.back()" class="back"> <img src="../../Assets/images/back.png" alt=""> </button>
-    <div class="PageContainer">
-        <div>
-            <img src="../../Assets/images/Raggy/ResetPass.png" class="icon">
-            <h1>Reset Password</h1>
-=======
-        <button onclick="history.back()" class="back"> Back </button>
+        <button onclick="history.back()" class="back"> <img src="../../Assets/images/back.png" alt=""> </button>
         <div class="PageContainer">
             <div>
                 <img src="../../Assets/images/Raggy/ResetPass.png" class="icon">
                 <h1>Reset Password</h1>
             </div>
-            <form action="" class="details">
-                <input type="text" placeholder="Username">
-                <input type="text" placeholder="Email">
-                <input type="text" placeholder="Password">
-                <input type="text" placeholder="New Password">
+            <form action="Reset.php" class="details" method="post">
+                <input type="text" placeholder="Username" name="Username">
+                <input type="text" placeholder="Email" name="Email">
+                <input type="text" placeholder="Password" name="Password">
+                <input type="text" placeholder="New Password" name="NewPassword">
 
                 <?php
                 if (empty($_SESSION['Status'])) {
@@ -39,7 +32,5 @@ session_start();
 
                 <input type="submit">
             </form>
->>>>>>> Stashed changes
         </div>
-    </div>
 </body>

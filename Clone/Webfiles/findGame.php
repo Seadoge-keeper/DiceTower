@@ -1,3 +1,7 @@
+<?php
+session_start()
+
+?>
 <head>
     <link rel="stylesheet" href="findGame.css">
     <link rel="stylesheet" href="../header.css">
@@ -16,17 +20,17 @@
             </div>
 
             <?php
-            if (!isset($_SESSION['loggedin'])) {
-                echo "
+                if (!isset($_SESSION['Loggedin'])) {
+                    echo "
                     <div class='accts'>
                     <a href='Loginpages/Login.php'>Log in</a>
                     </div>";
-            } else {
+                } else {
                 echo "
-                <div class='accts'>
-                <a href='/AcctDetails.php'>Account</a>
-                </div>";
-            }
+                    <div class='accts'>
+                        <a href='AcctDetails.php'>Account</a>
+                    </div>";
+                }
             ?>
         </div>
         <div class="buttons">

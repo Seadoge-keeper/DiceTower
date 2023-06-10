@@ -1,3 +1,7 @@
+<?php
+session_start()
+
+?>
 <head>
     <link rel="stylesheet" href="myGame.css">
     <link rel="stylesheet" href="../header.css">
@@ -16,7 +20,7 @@
             </div>
 
             <?php
-                if (!isset($_SESSION['loggedin'])) {
+                if (!isset($_SESSION['Loggedin'])) {
                     echo "
                     <div class='accts'>
                     <a href='Loginpages/Login.php'>Log in</a>
