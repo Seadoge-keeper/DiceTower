@@ -95,7 +95,7 @@ include '../connectSQL.php';
                         $IDMessage = $box['Message'];
                         $IDUrl = $box['Image_Url'];
                         $IDImgStat = $box['has_image'];
-                        $IDLikes = $box['Likes'];
+                        $IDLikes = intval($box['Likes']);
                         $IDTime = $box['Time'];
                         $IDComm = $box['Comments'];
 
@@ -119,10 +119,15 @@ include '../connectSQL.php';
                                 <div> " . $IDMessage . "</div>
                                 <form method='post'>
                                 <input type='Hidden' name='" . $IDno . "' value='" . $IDno . "'>
-                                <input type='submit' class='Like'>".$IDLikes."</Button>
+                                <input type='submit' value='Like' class='Like'>" . $IDLikes . "</Button>
                                 </form>";
                             if (isset($_POST[$IDno])) {
-                                echo "<br>Post Liked";
+                                $Newlike = $IDLikes + 1;
+
+                                $LikeQuery = "UPDATE posts SET Likes = " . $Newlike . " WHERE id = " . $IDno . "";
+                                $stmt = $conn->prepare($LikeQuery);
+                                $stmt->execute();
+
                             }
                             echo "</div>";
 
@@ -137,12 +142,15 @@ include '../connectSQL.php';
                                 <div> " . $IDMessage . "</div>
                                 <form method='post'>
                                 <input type='Hidden' name='" . $IDno . "' value='" . $IDno . "'>
-                                <input type='submit' class='Like'>".$IDLikes."</Button>
+                                <input type='submit' class='Like'>" . $IDLikes . "</Button>
                                 </form>";
                             if (isset($_POST[$IDno])) {
-                                $LikeQuery = "INSERT INTO posts (Likes) value (?)";
-                                $Newlike = $IDLikes + 1; 
-                                echo $Newlike;
+                                $Newlike = $IDLikes + 1;
+
+                                $LikeQuery = "UPDATE posts SET Likes = " . $Newlike . " WHERE id = " . $IDno . "";
+                                $stmt = $conn->prepare($LikeQuery);
+                                $stmt->execute();
+
                             }
                             echo "</div>";
 
