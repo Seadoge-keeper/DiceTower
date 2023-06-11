@@ -6,10 +6,10 @@ if (empty($_POST['Username']) || empty($_POST['Password']) || empty($_POST['Emai
     header("Location: Registration.php");
 }
 
-if ($stmt = $conn->prepare('SELECT ID, Password FROM userdb WHERE username = ?')) {
-    $stmt->bind_param('s', $_POST['Username']);
-    $stmt->execute();
-    $stmt->store_result();
+if ($stmt = $conn->prepare('SELECT ID, Password FROM userdb WHERE username = ?')) { #Connects variable into database with prepare
+    $stmt->bind_param('s', $_POST['Username']); #finds ID and Password from userdb using Username Parameter
+    $stmt->execute(); #Executes prepared statement
+    $stmt->store_result(); #Keeps the results of $stmt
 
     if ($stmt->num_rows > 0) {
         $_SESSION["Status"] = "This user already Exists";
@@ -23,7 +23,14 @@ if ($stmt = $conn->prepare('SELECT ID, Password FROM userdb WHERE username = ?')
             session_regenerate_id();
             $_SESSION['Loggedin'] = True;
             $_SESSION['Name'] = $_POST['Username'];
-            $_SESSION['ID'] = $id;
+            $name = $_SESSION['Name'];
+
+            $User = "SELECT ID FROM userdb WHERE Username = $name";
+
+            $holder = mysqli_query($conn,$User);
+
+            $UserNo = $holder->fetch_assoc();
+            $_SESSION['ID'] = $UserNo['ID'];
             header("Location: ../../Index.php");
         } else {
             echo 'Statement error';

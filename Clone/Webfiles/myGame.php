@@ -1,7 +1,9 @@
 <?php
-session_start()
+
+include '../connectSQL.php';
 
 ?>
+
 <head>
     <link rel="stylesheet" href="myGame.css">
     <link rel="stylesheet" href="../header.css">
@@ -20,17 +22,17 @@ session_start()
             </div>
 
             <?php
-                if (!isset($_SESSION['Loggedin'])) {
-                    echo "
+            if (!isset($_SESSION['Loggedin'])) {
+                echo "
                     <div class='accts'>
                     <a href='Loginpages/Login.php'>Log in</a>
                     </div>";
-                } else {
+            } else {
                 echo "
                     <div class='accts'>
                         <a href='AcctDetails.php'>Account</a>
                     </div>";
-                }
+            }
             ?>
         </div>
         <div class="buttons">
@@ -53,15 +55,15 @@ session_start()
 
     <div class="Serverlist">
         <div>
-            <!-- Adaptive List for  -->
+            <!-- Adaptive List for multiple games // Optional Content -->
             Game lists
         </div>
         <div>
-            playspace
             <div class="Tools">
-                Tool bar
+                Tool bar ||
                 <input list="Characters" placeholder="Select Character">
                 <form action=""><input type="button" value="New Character"></form>
+                <!-- Come back to this later // optional Content -->
                 </form>
                 <datalist id="Characters">
                     <!-- Here PHP will be added to create new elements based on a database -->
@@ -69,13 +71,106 @@ session_start()
                         <!-- How I want it to appear: " (Username)CharacterName "  -->
                 </datalist>
             </div>
+
+
+
+
+
             <div class="GCCont">
                 <!-- Game Chat Container -->
-                Game chat
-                <div class="MsgCont">
-                    <!-- Message Container -->
-                    <h4> (Username)CharacterName </h4>
-                    <div> Chat contents</div>
+                <?php
+
+                $all = "SELECT * FROM posts";
+                $table = $conn->query($all);
+                $loop = $table->num_rows;
+
+
+
+                if ($loop > 0) {
+                    while ($row = $table->fetch_assoc()) {
+                        $box = $row;
+
+                        $IDno = $box['ID'];
+                        $IDUser = $box['UserID'];
+                        $IDMessage = $box['Message'];
+                        $IDUrl = $box['Image_Url'];
+                        $IDImgStat = $box['has_image'];
+                        $IDLikes = $box['Likes'];
+                        $IDTime = $box['Time'];
+                        $IDComm = $box['Comments'];
+
+                        $User = "SELECT Username FROM userdb WHERE ID = $IDUser";
+
+                        $Poster = mysqli_query($conn, $User);
+
+                        $Owner = $Poster->fetch_assoc();
+
+                        $PostName = $Owner['Username'];
+
+                        if ($IDImgStat == 1) {
+                            echo "
+                            <div class='MsgCont'>
+                                <!-- Message Container -->
+                                <div>
+                                <h4 class='User'><i>" . $PostName . "</i></h4>
+                                <h4>CharacterName </h4>
+                                </div>
+                                <img class='Upload' src='uploads/" . $IDUrl . "'>
+                                <div> " . $IDMessage . "</div>
+                                <form method='post'>
+                                <input type='Hidden' name='" . $IDno . "' value='" . $IDno . "'>
+                                <input type='submit' class='Like'>".$IDLikes."</Button>
+                                </form>";
+                            if (isset($_POST[$IDno])) {
+                                echo "<br>Post Liked";
+                            }
+                            echo "</div>";
+
+                        } else {
+                            echo "
+                            <div class='MsgCont'>
+                                <!-- Message Container -->
+                                <div>
+                                <h4 class='User'><i>" . $PostName . "</i></h4>
+                                <h4>CharacterName </h4>
+                                </div>
+                                <div> " . $IDMessage . "</div>
+                                <form method='post'>
+                                <input type='Hidden' name='" . $IDno . "' value='" . $IDno . "'>
+                                <input type='submit' class='Like'>".$IDLikes."</Button>
+                                </form>";
+                            if (isset($_POST[$IDno])) {
+                                $LikeQuery = "INSERT INTO posts (Likes) value (?)";
+                                $Newlike = $IDLikes + 1; 
+                                echo $Newlike;
+                            }
+                            echo "</div>";
+
+                        }
+
+
+                    }
+
+                }
+
+
+                ?>
+                <br>
+                <div class="Chatbox">
+                    <form action="GameChat.php" class="PostBox" method="post" enctype="multipart/form-data">
+                        <input type="text" name="Text" id="Text">
+                        <input type="file" name="UploadImg">
+                        <input type="submit" name="Send" id="Send">
+                    </form>
+
+                    <?php
+                    if (empty($_SESSION['Status'])) {
+                        echo "<br>";
+                    } else {
+                        echo $_SESSION['Status'];
+                        $_SESSION['Status'] = null;
+                    }
+                    ?>
                 </div>
             </div>
         </div>

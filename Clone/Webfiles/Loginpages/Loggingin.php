@@ -18,7 +18,18 @@ if ($stmt = $conn->prepare('SELECT ID, Password FROM userdb WHERE username = ?')
             session_regenerate_id();
             $_SESSION['Loggedin'] = true;
             $_SESSION['Name'] = $_POST['Username'];
-            $_SESSION['ID'] = $id;
+            $name = $_SESSION['Name'];
+
+            $User = "SELECT ID FROM userdb WHERE Username = '$name'";
+
+            $holder = mysqli_query($conn,$User);
+
+            $UserNo = $holder->fetch_assoc();
+
+            $_SESSION['ID'] = $UserNo['ID'];
+
+            echo "<br> AcctID: " . $_SESSION['ID'];
+
             header("Location: ../../Index.php");
         } else {
             $_SESSION["Status"] = "Invalid Password";

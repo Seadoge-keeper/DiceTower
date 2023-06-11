@@ -1,6 +1,13 @@
 <?php
-session_start()
+session_start();
 
+$_SESSION['Loggedin'] = true;
+
+if (isset($_SESSION['Loggedin'])) {
+  
+} else {
+    header('Location: Webfiles/Loginpages/Login.php');
+}
 ?>
 
 <head>
